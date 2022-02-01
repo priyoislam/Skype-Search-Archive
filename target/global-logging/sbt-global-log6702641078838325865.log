@@ -1,0 +1,41 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(68776954-30b4-4c01-bcfd-bf9cea1fce01), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"181","parents":[]},"eventTime":1643641688273,"message":"Compiling root","dataKind":"compile-task","data":{"target":{"uri":"file:/home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/#root/Compile"}}})[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/target/scala-3.1.0/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"compiling 1 Scala source to /home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/target/scala-3.1.0/classes ..."})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/src/main/scala/Main.scala"},"buildTarget":{"uri":"file:/home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/#root/Compile"},"diagnostics":[{"range":{"start":{"line":5,"character":7},"end":{"line":5,"character":14}},"severity":1,"source":"sbt","message":"Not found: grapple"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/src/main/scala/Main.scala:6:7 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m[33mimport[0m grapple.json.{ *, [33mgiven[0m }[0m
+[0m[[0m[31merror[0m] [0m[0m  |       [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |       Not found: grapple[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"\u001b[31m-- [E006] Not Found Error: /home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/src/main/scala/Main.scala:6:7 \u001b[0m\n\u001b[31m6 |\u001b[0m\u001b[33mimport\u001b[0m grapple.json.{ *, \u001b[33mgiven\u001b[0m }\n  |       \u001b[31m^^^^^^^\u001b[0m\n  |       Not found: grapple"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/src/main/scala/Main.scala"},"buildTarget":{"uri":"file:/home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/#root/Compile"},"diagnostics":[{"range":{"start":{"line":12,"character":4},"end":{"line":12,"character":4}},"severity":1,"source":"sbt","message":"Missing parameter type\n\nI could not infer the type of the parameter x$1 of expanded function:\nx$1 => \n  x$1\u001b[33m match \u001b[0m\n    {\n      \u001b[33mcase \u001b[0mjson:\u001b[35mJsonObject\u001b[0m => \n        Conversation(json(\u001b[32m\"id\"\u001b[0m), json(\u001b[32m\"displayname\"\u001b[0m))\n      \u001b[33mcase \u001b[0m_ => \n        \u001b[33mthrow \u001b[0mIllegalArgumentException(\u001b[32m\"Expected JSON object\"\u001b[0m)\n    }."}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E081] Type Error: /home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/src/main/scala/Main.scala:13:4 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m    [33mcase[0m json: JsonObject => Conversation(json([31m"id"[0m), json([31m"displayname"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m   |    [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |   Missing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |   I could not infer the type of the parameter x$1 of expanded function:[0m
+[0m[[0m[31merror[0m] [0m[0m   |   x$1 => [0m
+[0m[[0m[31merror[0m] [0m[0m   |     x$1[33m match [0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |       {[0m
+[0m[[0m[31merror[0m] [0m[0m   |         [33mcase [0mjson:[35mJsonObject[0m => [0m
+[0m[[0m[31merror[0m] [0m[0m   |           Conversation(json([32m"id"[0m), json([32m"displayname"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m   |         [33mcase [0m_ => [0m
+[0m[[0m[31merror[0m] [0m[0m   |           [33mthrow [0mIllegalArgumentException([32m"Expected JSON object"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |       }.[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"\u001b[31m-- [E081] Type Error: /home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/src/main/scala/Main.scala:13:4 \u001b[0m\n\u001b[31m13 |\u001b[0m    \u001b[33mcase\u001b[0m json: JsonObject => Conversation(json(\u001b[31m\"id\"\u001b[0m), json(\u001b[31m\"displayname\"\u001b[0m))\n   |    \u001b[31m^\u001b[0m\n   |   Missing parameter type\n   |\n   |   I could not infer the type of the parameter x$1 of expanded function:\n   |   x$1 => \n   |     x$1\u001b[33m match \u001b[0m\n   |       {\n   |         \u001b[33mcase \u001b[0mjson:\u001b[35mJsonObject\u001b[0m => \n   |           Conversation(json(\u001b[32m\"id\"\u001b[0m), json(\u001b[32m\"displayname\"\u001b[0m))\n   |         \u001b[33mcase \u001b[0m_ => \n   |           \u001b[33mthrow \u001b[0mIllegalArgumentException(\u001b[32m\"Expected JSON object\"\u001b[0m)\n   |       }."})[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"two errors found"})[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"two errors found"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/src/main/scala/jsonparse.scala"},"buildTarget":{"uri":"file:/home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/#root/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/src/main/scala/Main.scala"},"buildTarget":{"uri":"file:/home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/#root/Compile"},"diagnostics":[{"range":{"start":{"line":5,"character":7},"end":{"line":5,"character":14}},"severity":1,"source":"sbt","message":"Not found: grapple"},{"range":{"start":{"line":12,"character":4},"end":{"line":12,"character":4}},"severity":1,"source":"sbt","message":"Missing parameter type\n\nI could not infer the type of the parameter x$1 of expanded function:\nx$1 => \n  x$1\u001b[33m match \u001b[0m\n    {\n      \u001b[33mcase \u001b[0mjson:\u001b[35mJsonObject\u001b[0m => \n        Conversation(json(\u001b[32m\"id\"\u001b[0m), json(\u001b[32m\"displayname\"\u001b[0m))\n      \u001b[33mcase \u001b[0m_ => \n        \u001b[33mthrow \u001b[0mIllegalArgumentException(\u001b[32m\"Expected JSON object\"\u001b[0m)\n    }."}],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"181","parents":[]},"eventTime":1643641688491,"message":"Compiled root","status":2,"dataKind":"compile-report","data":{"target":{"uri":"file:/home/priyoi/Files/Alo/Skype-Searchable-Archive/archive/#root/Compile"},"errors":2,"warnings":0,"time":218}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"})[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Jan 31, 2022, 9:08:09 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
